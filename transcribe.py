@@ -13,5 +13,5 @@ f2 = open("audio_files/german.mp3", "rb")
 # Call the appropriate method for transcription
 result = client.audio.transcriptions.create(file=f, model="whisper-1")
 result2 = client.audio.translations.create(file=f2, model="whisper-1")
-
+print(result)
 print(result2)
